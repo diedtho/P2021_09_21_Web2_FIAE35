@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <h1>Mach mir die Meldung!</h1>
+    Der Zählerstand ist: @ViewBag.Counter
+    <br />
+    Die aktuelle Zeit: @ViewBag.Zeit
+    <br />
+    @foreach (var Name in ViewBag.Namen)
+            {
+                <p>@Name</p>
+            }
+</head>
+<body>
+</body>
+</html>
