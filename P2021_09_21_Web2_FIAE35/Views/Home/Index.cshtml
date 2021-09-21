@@ -1,4 +1,4 @@
-﻿
+﻿@model P2021_09_21_Web2_FIAE35.Models.Input
 @{
     Layout = null;
 }
@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <h1>Mach mir die Meldung!</h1>
-    Der Zählerstand ist: @ViewBag.Counter
+    Der Zählerstand ist: @Model.zaehler
     <br />
-    Die aktuelle Zeit: @ViewBag.Zeit
+    Die aktuelle Zeit: @Model.zeit
     <br />
-    @foreach (var Name in ViewBag.Namen)
+    @foreach (var Name in Model.stringListe)
             {
                 <p>@Name</p>
             }

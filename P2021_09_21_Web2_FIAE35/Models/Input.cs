@@ -9,6 +9,6 @@ namespace P2021_09_21_Web2_FIAE35.Models
     {
         public int zaehler { get; set; }
         public DateTime zeit { get; set; }
-        public List<string> StringListe { get; set; }
+        public List<string> stringListe { get; set; }
     }
 }
